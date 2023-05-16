@@ -1,0 +1,256 @@
+.logoMobile {
+  width: 99px;
+  height: 35px;
+}
+.logoDesktop {
+  display: none;
+}
+
+.responseIcon {
+  display: none;
+}
+
+.supportText {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.form {
+  padding-bottom: 33px;
+  color: #101112;
+}
+
+body .formSelectInput {
+  font-size: 1rem;
+  line-height: 1.3125;
+}
+
+body .formInput {
+  display: block;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  padding: 0.9375rem 1rem;
+  color: #101112;
+  background-color: #fff;
+  border: 1px solid #ced2d9;
+}
+body .formInput:not(:disabled):hover {
+  background-color: #fff;
+  box-shadow: none;
+}
+body .formInput:-webkit-autofill,
+body .formInput:-webkit-autofill:hover,
+body .formInput:-webkit-autofill:focus,
+body .formInput:-webkit-autofill:active {
+  -webkit-text-fill-color: #101112 !important;
+}
+
+.formInputSelectWrap {
+  position: relative;
+}
+.formInputSelectWrap .formInput {
+  width: 100%;
+  appearance: none;
+}
+.formInputSelectIcon {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 100%;
+  pointer-events: none;
+}
+
+body .formInputError {
+  border-color: #f03e2f;
+  background-color: #fdebea;
+}
+
+body .nav {
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+  background-color: #101112;
+  z-index: 10;
+}
+
+body .navBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  margin-left: 1rem;
+  border-radius: 3px;
+  padding: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  transition: all 0.2s;
+}
+body .navBtn:hover,
+body .navBtn:focus {
+  background-color: #fff;
+  color: #101112;
+}
+body .navBtn svg {
+  width: 100%;
+  height: 100%;
+}
+body .navBtn span {
+  display: none;
+}
+body .navBtn span span [data-ui='Box'] {
+  display: none;
+}
+
+body .navBtn:hover,
+body .navBtn:not([data-disabled='true']):focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+body .submitBtn,
+body .addAnotherTicketBtn {
+  cursor: pointer;
+  box-shadow: none;
+  border: none;
+}
+
+body .addAnotherTicketBtn *,
+body .submitBtnEnabled {
+  color: #fff;
+  background-color: #101112;
+}
+
+body .submitBtn:hover * {
+  background-color: #565d67;
+}
+
+body .supportChannels {
+  border-bottom: 1px solid #3f434a;
+}
+
+body .doughnutContainer {
+  position: relative;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+body .doughnutWrap {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+body .doughnutTotal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #6b7280;
+}
+
+@media (min-width: 360px) {
+  body .formSelectInput {
+    font-size: 1rem;
+    line-height: 1.3125;
+  }
+}
+
+@media (min-width: 900px) {
+  .responseIcon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 1rem;
+  }
+  .responseIcon path {
+    stroke: #1b1d20;
+  }
+
+  .logoMobile {
+    display: none;
+  }
+
+  .logoDesktop {
+    display: block;
+    width: 133px;
+    height: 56px;
+  }
+
+  .supportText {
+    display: flex;
+    align-items: center;
+  }
+  .supportText a {
+    margin-left: 1rem;
+  }
+
+  .form {
+    padding-bottom: 0;
+  }
+
+  body .formSelectInput {
+    font-size: 1.1875rem;
+    line-height: 1.3157894736842106;
+  }
+
+  body .formInput {
+    padding: 0.8125rem 1.25rem;
+  }
+
+  .formInputSelectIcon {
+    right: 1.25rem;
+  }
+
+  body .nav {
+    padding: 0 85px;
+  }
+
+  body .navBtn {
+    width: auto;
+    height: auto;
+    margin-left: 0;
+    margin-right: 2rem;
+    padding: 6px 10px;
+  }
+  body .navBtn span {
+    display: block;
+    margin-left: 8px;
+  }
+
+  body .navBtn svg {
+    width: 29px;
+    height: 29px;
+  }
+
+  body .navBtn span span [data-ui='Box'] {
+    display: block;
+  }
+
+  body .supportChannels {
+    border-bottom: none;
+  }
+
+  body .supportTeam {
+    border-left: 1px solid #3f434a;
+  }
+}
+
+body .metricBox {
+  color: #101112;
+  border: 1px solid #e5e7eb;
+  border-top-width: 4px;
+  border-radius: 8px;
+}
